@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Knives</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="our-story.html">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Premium Knives</h1>
+            <p>Providing the finest knives for 5-star hotels and households.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="knife1.jpg" alt="Knife 1" class="product-image" onclick="openModal(this)">
+                <h3>Chef's Knife</h3>
+                <p>High-quality chef's knife for professional kitchens.</p>
+            </div>
+            <div class="product">
+                <img src="knife2.jpg" alt="Knife 2" class="product-image" onclick="openModal(this)">
+                <h3>Paring Knife</h3>
+                <p>Perfect for intricate cutting and peeling tasks.</p>
+            </div>
+            <div class="product">
+                <img src="knife3.jpg" alt="Knife 3" class="product-image" onclick="openModal(this)">
+                <h3>Santoku Knife</h3>
+                <p>Versatile knife for various cutting tasks.</p>
+            </div>
+            <div class="product">
+                <img src="knife4.jpg" alt="Knife 4" class="product-image" onclick="openModal(this)">
+                <h3>Utility Knife</h3>
+                <p>Essential knife for everyday use.</p>
+            </div>
+            <div class="product">
+                <img src="knife5.jpg" alt="Knife 5" class="product-image" onclick="openModal(this)">
+                <h3>Boning Knife</h3>
+                <p>Perfect for boning meat and fish.</p>
+            </div>
+            <div class="product">
+                <img src="knife6.jpg" alt="Knife 6" class="product-image" onclick="openModal(this)">
+                <h3>Bread Knife</h3>
+                <p>Ideal for slicing bread and baked goods.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-story-link">
+        <h2>Our Story</h2>
+        <p>Discover the journey behind Premium Knives. <a href="our-story.html" class="story-link">Read More</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Premium Knives. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for image view -->
+    <div id="image-modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+</body>
+</html>
